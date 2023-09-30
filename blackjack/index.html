@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <h1>Blackjack</h1>
+    <div>
+        <p id="message-el">Want to play a round?</p>
+        <p id="playerCards-el">Your Cards:</p>
+        <p id="dealerCards-el">Dealers Cards:</p>
+        <button onclick="startGame()">START GAME</button>
+        <button onclick="newCard()">NEW CARD</button>
+        <p id="player-el">Player: $100.00</p>
+        <script src="index.js"></script>
+    </div>
+    <button id="guide">GUIDE</button>
+    <p>The game is similar to blackjack however a slight play on the rules. The dealer will keep hitting cards until
+        their sum is at least 17, at which point they will hold. Here are the ways your money can change:</p>
+    <ul>
+        <li><strong>Overflow: </strong>If you overflow, your money halves. But if the dealer overflows, your money will
+            double.</li>
+        <li><strong>Blackjack: </strong>If you get a blackjack, your money doubles. Conversely, if the dealer gets a
+            blackjack, your money will be cut in half. However, if you get a natural, your money will me multiplied by
+            2.5.</li>
+        <li><strong>New Game: </strong>If you start a new game and your card sum is greater than the dealers, your money
+            is multiplied by 1.5. Conversely, if the dealers money exceeds yours, your money is divided by 1.75 i.e. it
+            decreases by about 42%.</li>
+    </ul>
+    <p>Note that these effects stack.</p>
+</body>
+
+</html>
